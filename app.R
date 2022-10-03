@@ -1,5 +1,5 @@
 #Current and Past Monitored Sites
-#Show all monitored CWL sites, split into current and past 
+#Show all monitored CWL sites, split into current and past
 
 #shiny
 library(shiny)
