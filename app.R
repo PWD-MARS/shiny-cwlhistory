@@ -26,7 +26,7 @@ options(DT.options = list(pageLength = 15))
 #set db connection
 #using a pool connection so separate connections are unified
 #gets environmental variables saved in local or pwdrstudio environment
-poolConn <- dbPool(odbc(), dsn = "mars_testing", uid = Sys.getenv("shiny_uid"), pwd = Sys.getenv("shiny_pwd"))
+poolConn <- dbPool(odbc(), dsn = "mars14_data", uid = Sys.getenv("shiny_uid"), pwd = Sys.getenv("shiny_pwd"))
 
 #disconnect from db on stop 
 onStop(function(){
@@ -56,7 +56,7 @@ server <- function(input, output) {
     rv <- reactiveValues()
     
     #query active table
-    active_cwl_sites_query <- "select * from fieldwork.active_cwl_sites order by smp_id, site_name"
+    active_cwl_sites_query <- "select * from fieldwork.viw_active_cwl_sites order by smp_id, site_name"
     
     rv$active_cwl_sites_db <- reactive(dbGetQuery(poolConn, active_cwl_sites_query))
     
@@ -83,7 +83,7 @@ server <- function(input, output) {
     )
     
     #query past table
-    past_cwl_sites_query <- "select * from fieldwork.previous_cwl_sites order by smp_id, site_name"
+    past_cwl_sites_query <- "select * from fieldwork.viw_previous_cwl_sites order by smp_id, site_name"
     
     rv$past_cwl_sites_db <- reactive(dbGetQuery(poolConn, past_cwl_sites_query))
     
