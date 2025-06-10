@@ -1,0 +1,12 @@
+name: dtime-shiny-cwlhistory
+title: dtime-shiny-cwlhistory
+username: Jonathan.Bryant
+account: Jonathan.Bryant
+server: pwdrstudio.phila.gov
+hostUrl: https://pwdrstudio.phila.gov/__api__
+appId: 515
+bundleId: 3288
+url: https://pwdrstudio.phila.gov/content/878759bf-0d20-44ff-be8a-1912bc4bb8a3/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
