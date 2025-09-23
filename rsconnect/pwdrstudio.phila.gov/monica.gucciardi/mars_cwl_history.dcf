@@ -1,0 +1,12 @@
+name: mars_cwl_history
+title: MARS CWL History
+username: monica.gucciardi
+account: monica.gucciardi
+server: pwdrstudio.phila.gov
+hostUrl: https://pwdrstudio.phila.gov/__api__
+appId: 549
+bundleId: 3557
+url: https://pwdrstudio.phila.gov/content/184eef19-a61b-4c12-8bc1-fd9a44ab32f4/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

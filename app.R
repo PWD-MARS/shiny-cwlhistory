@@ -27,8 +27,6 @@ options(DT.options = list(pageLength = 15))
 #using a pool connection so separate connections are unified
 #gets environmental variables saved in local or pwdrstudio environment
 
-#poolConn <- dbPool(odbc(), dsn = "mars14_data", uid = Sys.getenv("shiny_uid"), pwd = Sys.getenv("shiny_pwd"))
-
 poolConn <- dbPool(RPostgres::Postgres(),
                    host = "PWDMARSDBS1.pwd.phila.local",
                    port = 5434,
